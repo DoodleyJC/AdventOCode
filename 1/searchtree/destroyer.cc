@@ -2,5 +2,5 @@
 
 
 searchTree::~searchTree(){
-    delete this->d_children;
+    delete[] this->d_children;
 }

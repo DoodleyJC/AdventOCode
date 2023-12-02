@@ -10,7 +10,7 @@ void searchTree::addChild(std::string s, int value){
         d_children[idx] = 0;
     }
     newChildren[newSize-1] = new searchTree(s, value);
-    delete d_children;
+    delete[] d_children;
     this->d_children = newChildren;
     this->d_size = newSize;
 }

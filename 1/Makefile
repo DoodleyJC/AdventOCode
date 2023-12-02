@@ -16,3 +16,4 @@ clean:
 	rm -rf *.a
 	rm -rf */*.gch
 	rm -rf main
+	rm -rf main2
