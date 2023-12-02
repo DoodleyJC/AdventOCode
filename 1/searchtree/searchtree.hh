@@ -5,7 +5,7 @@
 
 class searchTree
 {
-    searchTree* d_children;
+    searchTree** d_children;
     size_t d_size;
     std::string d_text;
     int d_value;
@@ -15,14 +15,14 @@ class searchTree
         searchTree(std::string s, int value);
         ~searchTree();
 
-        void printTree();
+        void printTree(size_t lvl);
         void addChild(std::string s, int value);
         void addToTree(std::string s, int value);
         int match(std::string s);
-
     private:
         size_t matchText(std::string s1);
         size_t matchLeft(char c);
+        void addToTreeHelp(std::string s, int value, size_t size, searchTree** children, bool isFinal);
 };
 
 #endif

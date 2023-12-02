@@ -6,6 +6,11 @@ all:
 	g++ main.cc header.a -o main
 	g++ main2.cc header.a -o main2
 
+main:
+	rm -rf main
+	rm -rf main2
+	g++ main.cc header.a -o main
+	g++ main2.cc header.a -o main2
 clean:
 	rm -rf *.o
 	rm -rf *.a

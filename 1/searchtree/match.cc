@@ -15,7 +15,7 @@ int searchTree::match(std::string s){
     }
     size_t childIndex = matchLeft(s.at(matchIndex));
     if(childIndex!=((size_t) -1)){
-        return d_children[childIndex].match(s.substr(matchIndex));
+        return d_children[childIndex]->match(s.substr(matchIndex));
     } else{
         std::cout << "could not find child to match with";
         return -1;
