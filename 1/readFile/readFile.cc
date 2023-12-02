@@ -33,7 +33,7 @@ int findSum(std::string x){
                 flag = 1;
             }
             highest = num;
-        } else{
+        } else{ //match to string
             ++idx;
         }
     }

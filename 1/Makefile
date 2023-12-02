@@ -4,6 +4,7 @@ all:
 	g++ -c -x c++-header  -std=c++20 */*.ih
 	ar rvs header.a *.o
 	g++ main.cc header.a -o main
+	g++ main2.cc header.a -o main2
 
 clean:
 	rm -rf *.o
