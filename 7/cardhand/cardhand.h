@@ -10,15 +10,15 @@ class CardHand{
     public: 
         CardHand() = default;
         CardHand(std::string hand, int bet);
-        //CardHand(CardHand &&other);
+        CardHand(CardHand &&other);
 
         int getPower() const;
         int compare(CardHand const &other) const;
 
         std::string getHand(){return d_hand;}
         int getBet(){return d_bet;}
-        //CardHand& operator=(CardHand& other);
-        //friend void swap(CardHand &orig, CardHand &other);
+        CardHand& operator=(CardHand const &other);
+        friend void swap(CardHand &orig, CardHand &other);
 
     private:
         int uniquechars() const;
@@ -29,7 +29,7 @@ class CardHand{
 
 bool operator<(CardHand const &oneHand, CardHand const &other );
 
-//void swap(CardHand &orig, CardHand &other);
+void swap(CardHand &orig, CardHand &other);
 
 
 #endif

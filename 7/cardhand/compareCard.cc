@@ -5,9 +5,6 @@ int CardHand::compareCard(char c1, char c2) const{
         return 0;
     }
     std::string cards = "AKQJT9876543210";
-
-    int x = (int) (c1-'0');
-
     if(cards.find(c1)< cards.find(c2)){
         return 1;
     } else{
