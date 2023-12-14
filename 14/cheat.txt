@@ -1,0 +1,5 @@
+10000 cycles, my first j (j=1)
+
+j=8 we return to same position, 
+
+(1 000 000 000 - 10000) mod 7
